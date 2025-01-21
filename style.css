@@ -1,0 +1,149 @@
+/* Estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    -webkit-tap-highlight-color: transparent; /* Remove highlight ao tocar em elementos no mobile */
+    overscroll-behavior-y: contain; /* Previne scroll bounce em iOS */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-transform: uppercase;
+    -webkit-appearance: none; /* Remove estilo padrão em iOS */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #206ab5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: transparent; /* Remove highlight ao tocar */
+}
+
+button:hover {
+    background-color: #4f81b2;
+}
+
+#enviarWhatsapp {
+    background-color: #25D366;
+}
+
+#enviarWhatsapp:hover {
+    background-color: #1DA955;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-transform: uppercase;
+    white-space: pre-wrap; /* Para manter a formatação com quebras de linha */
+}
+
+.checkbox-group {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --container-bg: #fff;
+    --result-bg: #f8f9fa;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --container-bg: #333;
+    --result-bg: #444;
+}
+
+button#theme-toggle {
+    margin-top: 10px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px;
+}
+
+/* Estilos para os botões de controle de fonte */
+.btn-group {
+    display: inline-flex;
+    gap: 5px;
+}
+
+.btn-outline-secondary {
+    width: auto;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #206ab5;
+    color: #206ab5;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #206ab5;
+    color: #fff;
+}
+
+#diminuirFonte, #aumentarFonte {
+    width: auto;
+    margin-top: 0;
+}
+
+.gabinete {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+/* Estilos PWA */
+@media (display-mode: standalone) {
+    body {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+}
